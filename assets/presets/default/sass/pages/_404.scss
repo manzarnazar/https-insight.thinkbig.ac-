@@ -1,0 +1,12 @@
+.error-wrap {
+    img {
+        background: hsl(var(--danger));
+    }
+    &__title {
+        margin-bottom: 0;
+    }
+    &__desc {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+}  

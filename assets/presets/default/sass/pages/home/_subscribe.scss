@@ -1,0 +1,32 @@
+/*============= Breaking News =============*/
+.subscribe-wrap {
+    padding: 50px;
+    border-radius: 15px;
+    border: 2px solid hsl(var(--base-two));
+    @include sm-screen {
+        padding: 40px;
+    }
+    @include xxsm-screen {
+        padding: 20px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    &__input {
+        position: relative;
+        input {
+            height: 60px;
+            border-radius: 10px;
+            background-color:hsl(var(--base)/0.05);
+            padding-right: 70px;
+        }
+        button {
+            position: absolute;
+            height: 100%;
+            width: 62px;
+            background-color: hsl(var(--base));
+            border-radius: 0px 10px 10px 0px;
+            right: 0;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+/*====================== Topics ====================*/
+.single-topic {
+    border: 2px solid transparent;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    &:hover {
+        background: hsl(var(--white));
+        box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+        border: 2px solid hsl(var(--base-two));
+        transform: translateY(-3px);
+        .single-topic__thumb {
+            position: relative;
+            display: block;
+            height: 100%;
+            transition: all 0.3s ease;
+            img {
+                padding: 15px;
+                padding-bottom: 0;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+    &__thumb{
+        margin: auto;
+        width: 100%;
+        height: 210px;
+        transition: all 0.3s ease;
+        img {
+            margin: auto;
+            width: 100%;
+            height: 210px;
+            transition: all 0.3s;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+
+    }
+    &__content {
+        padding: 15px 20px 20px 20px;
+        a.title {
+            display: block;
+        }
+    }
+}
+
+
+.topics-area.meet-podcasts {
+    .single-topic {
+        &__thumb {
+            width: 100%;
+            height: 300px;
+            img {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+}

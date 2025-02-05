@@ -1,0 +1,68 @@
+/*=================== Contact top Start =========*/
+.contact-info {
+    .section-heading {
+        margin-bottom: 0;
+        &__title {
+            margin-bottom: 45px;
+            line-height: 1;
+        }
+    } // NU Website a Notice Board dakba.... R Ami jante parte to janabo.. tobe maybe  November - December ar dike start hobe.
+    &__addres-wrap { 
+        .single_wrapper {
+            border-bottom: 1px solid hsl(var(--base)/0.3);
+            h3 {
+                margin-bottom: 20px;
+                text-transform: capitalize;
+                color: hsl(var(--black));
+              }
+            & .single-info {
+                display: flex;
+                align-items: center;
+                
+                & .cont-icon {
+                    margin-right: 25px;
+                    & i {
+                        font-size: 40px;
+                        color: hsl(var(--base));
+                      }
+                }
+                & .cont-text  {
+                      & h6 {
+                        font-size: 16px;
+                        font-weight: 400;
+                         a {
+                            color: hsl(var(--black)/0.6);
+                         }
+                    }
+                }
+            }
+        }
+    }
+}
+// Contact top End
+
+
+// Contact Bottom Start
+.contact-map {
+    width: 100%;
+    min-height: 300px;
+    height: 100%;
+    iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+.contactus-form {
+    border: 1px solid hsl(var(--base)/0.3);
+    background-color: hsl(var(--white)/.1);
+    padding: 40px 30px;
+    @include sm-screen {
+        padding: 30px 20px;
+    }
+    @include msm-screen {
+        padding: 20px 15px;
+    }
+}
+// Contact Bottom End
+

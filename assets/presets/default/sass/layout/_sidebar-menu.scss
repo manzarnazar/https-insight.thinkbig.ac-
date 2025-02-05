@@ -1,0 +1,144 @@
+/*======== Sidebar Menu Start =======*/
+.sidebar-menu {
+  padding-bottom: 10px;
+  min-height: 100%;
+  overflow-y: auto;
+  z-index: 999; 
+  transition: .2s linear;
+  box-shadow: var(--box-shadow);
+/*============== Sidebar Show hide Css Start ===========*/
+  &.show-sidebar {
+      transform: translateX(0);
+      background-color: hsl(var(--white));
+  }
+
+
+
+/*============== Sidebar Show hide Css end ===========*/
+  &-list {
+      &__item {
+        border-bottom: 1px solid hsl(var(--base)/.2);;
+        &.has-dropdown {
+          &.active {
+              >a {
+                background-color: hsl(var(--base)/0.1);
+                color: hsl(var(--base));
+                  &:after {
+                      transform: rotate(90deg);
+                      right: 17px;
+                      color: hsl(var(--base));
+                  }
+              }
+          }
+          > a {
+              &:after {
+                  font-family: "Font Awesome 5 Free";
+                  font-weight: 900;
+                  content: "\f105";
+                  font-style: normal;
+                  display: inline-block;
+                  font-style: normal;
+                  font-variant: normal;
+                  text-rendering: auto;
+                  text-align: center;
+                  background: 0 0;
+                  position: absolute;
+                  right: 15px;
+                  top: 14px;
+                  transition: .1s linear;
+              }
+          }
+        }
+      }
+      &__link {
+          display: inline-block;
+          text-decoration: none;
+          position: relative;
+          padding: 8px 20px 8px 20px;
+          width: 100%;
+          color: hsl(var(--black));  
+          .icon{
+              margin-right: 5px;
+              font-size: 15px;
+              line-height: 30px;
+              text-align: center;
+              border-radius: 4px;
+              animation: swing ease-in-out 0.5s 1 alternate;
+          }
+      }
+  }
+}
+
+/*=============== Sidebar Submenu Start ===============*/
+.sidebar-submenu {
+  display: none;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 22px;
+    left: 27px;
+    border-left: 1px solid hsl(var(--base));
+  }
+  &.open-submenu {
+    display: block;
+  }
+  &-list {
+      padding: 5px 0;
+      &__item {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 22px;
+          left: 28px;
+          width: 16px;
+          height: 1px;
+          border-top: 1px solid hsl(var(--base));
+        }
+        &.active {
+          > a {
+            background-color: hsl(var(--base)/0.08);
+            color: hsl(var(--base));
+          }
+        }
+      }
+      &__link {
+          padding: 8px 20px 8px 50px;
+          display: block;
+          color: hsl(var(--black));
+      }
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+

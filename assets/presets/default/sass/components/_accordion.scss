@@ -1,0 +1,80 @@
+/*=========================== Accodion style start =============================*/
+.custom--accordion {
+    .accordion-item {
+        border: 1px solid transparent;
+        background-color: transparent !important;
+        border-radius: 0px;
+        overflow: hidden;
+        &:not(:last-child) {
+            margin-bottom:20px;
+        }
+    }
+    .accordion-body {
+        padding: 20px;
+        background-color: hsl(var(--base)/0.03);
+        .text {
+            max-width: 60%;
+            @include msm-screen {
+                max-width: 100%;
+            }
+        }
+    }
+    &:first-of-type .accordion-button.collapsed {
+        border-radius:0px;  
+    }
+    &:last-of-type .accordion-button.collapsed {
+        border-radius: 0px;  
+    }
+    .accordion-button{
+        background-color: hsl(var(--base)/0.03);
+        color: var(--heading-color);
+        font-size: 18px;
+        padding: 15px ;
+        @include msm-screen {
+            font-size: 18px;
+            padding: 13px;
+            padding-right: 30px;
+        }
+        &::after {
+            background-image: none;
+        }
+        &:focus {
+            box-shadow: none;
+        }
+        &:not(.collapsed) {
+            color: hsl(var(--dark)); 
+            background-color:hsl(var(--base)/0.09) !important;
+            box-shadow: none;
+            border-bottom: 1px solid transparent;
+            &::after {
+                transform: rotate(0deg);
+                background-image: none;
+                color: hsl(var(--base)); ; 
+            }
+        }
+        &[aria-expanded="true"], &[aria-expanded="false"] {
+            &::after {
+                font-family: "Line Awesome Free";
+                font-weight: 600;
+                content: "\f068";
+                display: inline-block;
+                position: relative;
+                margin-left: auto;
+                width: 0 !important;
+                right: 15px;
+                color: hsl(var(--base));
+                @include msm-screen {
+                    right: -13px;
+                    font-size: 14px;
+                }
+            }
+        }
+        &[aria-expanded="false"] {
+            &::after {
+                content: "\f067";
+                color: hsl(var(--body-color));
+            }
+        }
+    }
+    
+}

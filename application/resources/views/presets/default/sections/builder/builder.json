@@ -1,0 +1,162 @@
+{
+    "banner": {
+        "builder": true,
+        "name": "Banner Section",
+        "content": {
+            "heading": "text",
+            "subheading": "text",
+            "button":"text"
+        },
+        "element":{
+            "name":"text",
+            "button1":"text",
+            "button2":"text",
+            "images":{
+                "card_image":{
+                    "size":"400x300"
+                }
+            },
+            "facebook_icon": "icon",
+            "facebook_url":"text",
+            "twitter_icon": "icon",
+            "twitter_url":"text",
+            "linkedin_icon": "icon",
+            "linkedin_url":"text",
+            "modal":false
+        }
+    },
+    "verified":{
+        "builder": true,
+        "no_selection": true,
+        "name": "Verified Image",
+        "content": {
+            "images":{
+                "verify_img":{
+                    "size":"50x50"
+                }
+            }
+        }
+    },
+    
+    "feature": {
+        "builder": true,
+        "name": "Feature Section",
+        "content": {
+            "heading": "text",
+            "subheading": "text"
+        },
+        "element": {
+            "title": "text",
+            "description": "textarea",
+            "feature_icon": "icon",
+            "modal": true
+        }
+    },
+    "about": {
+        "builder": true,
+        "name": "About Us",
+        "content": {
+            "images":{
+
+                "about_image":{
+                    "size":"700x500"
+                }
+            },
+            "heading": "text",
+            "subheading": "text",
+            "description": "textarea",
+            "about_us_link":"text"
+
+
+        }
+    },
+    "policy_pages": {
+        "builder": true,
+        "no_selection":true,
+        "name": "Policy Pages",
+        "element": {
+            "title": "text",
+            "details": "textarea-rich",
+            "modal": false
+        }
+    },
+    "blog": {
+        "builder": true,
+        "name": "Blog Section",
+        "content": {
+            "heading": "text"
+        },
+        "element": {
+            "images":{
+                "blog_image":{
+                    "size":"806x500",
+                    "thumb":"416x282"
+                }
+            },
+            "title": "text",
+            "author":"text",
+            "description": "textarea-rich",
+            "button":"text",
+            "modal": false
+        }
+    },
+    "subscribe": {
+        "builder": true,
+        "name": "Subscribe Section",
+        "content": {
+            "heading": "text",
+            "subheading": "text"
+        }
+    },
+    "social_icon": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Social Icons",
+        "element": {
+            "title": "text",
+            "social_icon": "icon",
+            "url": "text",
+            "modal": false
+        }
+    },
+    "contact_us": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Contact Us",
+        "content": {
+            "title" : "text",
+            "description": "textarea",
+            "email_address": "text",
+            "address": "text",
+            "contact_number": "text",
+            "latitude": "text",
+            "longitude": "text",
+            "website_footer": "textarea-rich"
+        }
+    },
+
+    "latest_episodes":{
+        "builder":true,
+        "name":"Latest Episodes",
+        "content":{
+            "heading":"text"
+        }
+    },
+
+    "category":{
+        "builder":true,
+        "name":"Category",
+        "content":{
+            "heading":"text"
+        }
+    },
+
+    "podcast":{
+        "builder":true,
+        "name":"Podcast",
+        "content":{
+            "heading":"text"
+        }
+    }
+
+}

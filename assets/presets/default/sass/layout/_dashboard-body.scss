@@ -1,0 +1,344 @@
+
+/*==============** Dashboard Profile **==============*/
+.dashboard {
+    .banner-form-wrap {
+        .contactus-form {
+            background-color: inherit;
+            border: 1px solid hsl(var(--base));
+            .contact__title {
+                color: hsl(var(--dark));
+            }
+            .select.form--control {
+                color: hsl(var(--dark));
+                border: 1px solid hsl(var(--base)/0.2);
+                &:focus  {
+                    border: 1px solid hsl(var(--base));
+                }
+            }
+            .form--control {
+                color: hsl(var(--dark));
+                border: 1px solid hsl(var(--base)/0.2);
+                &::placeholder {
+                    color: hsl(var(--dark));
+                }
+                &:focus  {
+                    border: 1px solid hsl(var(--base));
+                }
+            }
+        }
+    }
+}
+
+
+.dashboard_profile {
+    @include md-screen {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+}
+.dashboard_profile_wrap {
+    position: relative;
+    h3 {
+        font-size: 18px;
+    }
+    .profile_photo {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: hsl(var(--dark));
+            opacity: 0;
+            transition: all .4s;
+            visibility: hidden;
+        }
+        img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+        .photo_upload {
+            display: inline-block;
+            padding: 0px 0px 0px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: hsl(var(--white));
+            transform: translate(-50%, -50%);
+             i{
+                cursor: pointer;
+                visibility: hidden;
+                opacity: 0;
+             }
+            .upload_file {
+                opacity: 0;
+                position: absolute;
+                z-index: -1;
+                visibility: hidden;
+                display: none;
+            }
+        }
+    }
+    h3 {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 3px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+    }
+    p {
+    margin-bottom: 10px;
+    }
+    .profile-details {
+        ul {
+            li {
+                p {
+                    span {
+                        font-weight: 500;
+                        font-size: 18px;
+                        display: inline-block;
+                    }
+                    margin-bottom: 0;
+                    // border-bottom: 1px solid hsl(var(--base)/0.1);
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+.dashboard_profile_wrap .profile_photo:hover::before {
+    visibility: visible;
+    opacity: .7;
+}
+.dashboard_profile_wrap .profile_photo:hover .photo_upload i {
+    visibility: visible;
+    opacity: 1;
+}
+.dashboard_profile{
+    &__details {
+        ul {
+            li {
+                a {
+                    // border-bottom: 1px solid hsl(var(--base)/0.1);
+                    // padding: 12px 20px 12px 0px;
+                    display: block;
+                    font-size: 17px;
+                    transition: all .3s ease-in-out;
+                    i {
+                        margin-right: 10px;
+                    }
+                    &:hover {
+                        color: hsl(var(--base));
+                    }
+                    &.active {
+                    color: hsl(var(--base));
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.dashboard-body {
+    position: relative;
+    @include md-screen {
+        margin-top: 30px;
+    }
+    &__bar {
+        margin-bottom: 15px;
+        display: none;
+        @include lg-screen {
+            display: block;
+        }
+        &-icon {
+            color: hsl(var(--white));
+            font-size: 25px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            width: 50px;
+            height: 40px;
+            background-color: hsl(var(--base));
+            text-align: center;
+            padding: 2px 8px;
+        }
+    }
+}
+.selling-group-item span {
+    font-size: 14px;
+}
+.message-send__content.section-bg-two {
+    padding: 3px 5px;
+    margin-bottom: 5px;
+}
+
+.message-send__content.section-bg-two p {
+    font-size: 14px;
+}
+
+ul.list.d-flex.message-send__history {
+    font-size: 12px;
+}
+
+.message-send {
+    margin-bottom: 10px;
+}
+
+.message-receive__history-item {
+    margin-right: 20px;
+    position: relative;
+}
+
+.message-receive__history-item:last-child {
+    margin-right: 0;
+}
+
+.message-receive__history-item:after {
+    position: absolute;
+    top: 9px;
+    right: -13px;
+    content: "";
+    background: hsl(var(--base));
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+}
+.message-receive__history-item:last-child:after {
+    display: none;
+}
+
+.milestones-action {
+    cursor: pointer;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/*======= Dashboard Card =======*/
+.dashboard-card {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @include sm-screen {
+        padding: 20px 15px;
+    }
+    &__link {
+        position: absolute;
+        right: 20px;
+        a {
+            color: hsl(var(--white));
+            &:hover {
+                color: hsl(var(--base));
+            }
+        }
+    } 
+    &__icon {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        color: hsl(var(--white));
+        background-color: hsl(var(--base));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    &__title {
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+    &__content {
+        text-align: left;
+        width: calc(100% - 60px);
+        padding-left: 10px;
+    }   
+    &__amount {
+        margin-bottom: 5px;
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+}
+.selling-group-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(var(--base) /.2);
+    padding: 6px 0;
+}
+
+.card-header.selling-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card-primary {
+    background-color: hsl(var(--primary)/.6);
+    .dashboard-card__icon {
+        background-color: hsl(var(--primary));
+    }
+}
+.card-violet {
+    background-color: hsl(var(--violet)/.6);
+    .dashboard-card__icon {
+        background-color: hsl(var(--violet));
+    }
+}
+.card-success {
+    background-color: hsl(var(--success)/.6);
+    .dashboard-card__icon {
+        background-color: hsl(var(--success));
+    }
+}
+.card-danger {
+    background-color: hsl(var(--danger)/.4);
+    .dashboard-card__icon {
+        background-color: hsl(var(--danger));
+    }
+}
+.card-warning {
+    background-color: hsl(var(--warning)/.6);
+    .dashboard-card__icon {
+        background-color: hsl(var(--warning));
+    }
+}
+.card-info {
+    background-color: hsl(var(--info)/.6);
+    .dashboard-card__icon {
+        background-color: hsl(var(--info));
+    }
+}
+
+.card-success-1 {
+    background-color: hsl(var(--success)/.3);
+    .dashboard-card__icon {
+        background-color: hsl(var(--success));
+    }
+}
+.card-primary-1 {
+    background-color: hsl(var(--primary)/.4);
+    .dashboard-card__icon {
+        background-color: hsl(var(--primary));
+    }
+}
+.card-violet-1 {
+    background-color: hsl(var(--violet)/.3);
+    .dashboard-card__icon {
+        background-color: hsl(var(--violet)/.8);
+    }
+}
+
+  

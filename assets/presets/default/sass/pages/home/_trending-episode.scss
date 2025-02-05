@@ -1,0 +1,53 @@
+/*====================== Trending episode ====================*/
+.single-trending-episode {
+    border: 2px solid transparent;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+    transition: all 0.3s ease;
+    background-color: hsl(var(--base)/.04);
+    &:hover {
+        background: hsl(var(--white));
+        box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+        border-color: transparent;
+        transform: translateY(-3px);
+    }
+    &__thumb {
+        img {
+            width: 100%;
+            height: 210px;
+            border-radius: 15px;
+            display: block;
+            object-fit: cover;
+        }
+    }
+    &__info {
+        .top  {
+            .time i {
+                color: hsl(var(--base-two));
+            }
+            span.badge {
+                background: hsl(var(--base-two));
+                padding: 4px;
+                display: inline-block;
+                border-radius: 50%;
+                font-size: 11px;
+            }
+        }
+        .profile-block {
+            img {
+                width: 60px;
+                height: 60px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+            .verified-image {
+                display: inline-block;
+                width: 20px;
+                height: auto;
+            }
+        }
+    }
+}

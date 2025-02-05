@@ -1,0 +1,179 @@
+/*============= Banner area start  =============*/
+.banner-area {
+    position: relative;
+    z-index: 1;
+    padding: 180px 0 170px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden; 
+    background-color: hsl(var(--black));
+    @include sm-screen {
+        padding: 140px 0 100px;
+    }
+    @include md-screen {
+        padding: 200px 0 165px;
+    }    
+    @include msm-screen {
+        padding: 140px 0 100px;
+    }
+}
+
+.banner{
+    &__content {
+        span {
+            font-size: 22px;
+            text-transform: capitalize;
+            font-weight: 600;    
+            background: hsl(var(--white));
+            padding: 3px 10px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        h2 {
+            font-size: 45px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-weight: 700;
+            color: hsl(var(--white));
+            @include lg-screen {
+                font-size: 40px;
+            }
+            @include xxsm-screen {
+                font-size: 29px;
+            }
+        }
+        p {
+            margin-bottom: 30px;
+            color: hsl(var(--white));
+            padding-right: 50px;
+            @include msm-screen {
+                padding-right: 0px;
+            }
+        }
+    }
+}
+
+
+.banner-right-wrap {
+    img {
+        opacity: .7;
+    }
+}
+
+.btn.banner-btn {
+    border: 1px solid hsl(var(--base));
+    color: hsl(var(--base));
+    &:hover {
+        background-color: hsl(var(--base));
+        color: hsl(var(--white));
+    }
+    &.active {
+        background-color: hsl(var(--base));
+        color: hsl(var(--white));
+    }
+}
+
+
+/**
+*/
+
+.buying-wrap {
+    display: none;
+    transition: all .16s;
+    &.show {
+        display: block;
+        transition: all .16s;
+    }
+    .banner-select-wrap {
+        height: 51px;
+        margin-bottom: 20px;
+        background: hsl(var(--white));
+        select{
+            &.select {
+                padding: 0 15px;
+                background-color: hsl(var(--base)/0.05);
+                border: 0;
+                height: 51px;
+                width: 100%;
+            } 
+        }
+    }    
+}
+
+.price-wrap {
+    display: none;
+    &.show {
+        display: block;
+    }
+}
+.banner-bottom-wrap {
+    display: none;
+    &.show {
+        display: block;
+    }
+}
+
+
+
+/* ========= Multi step from ==========*/
+/*== progressbar ==*/
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+    text-align: center;
+}
+#progressbar li {
+	list-style-type: none;
+	color: hsl(var(--dark));
+	text-transform: capitalize;
+	font-size: 9px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+    counter-increment: step;
+    width: 55px;
+    line-height: 55px;
+    display: block;
+    font-size: 20px;
+    color: hsl(var(--white));
+    background: hsl(var(--base));
+    margin: 0 auto 5px auto;
+    border-radius: 30px;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: hsl(var(--base) / .2);
+	position: absolute;
+	left: -50%;
+	top: 30px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: hsl(var(--base));
+	color: hsl(var(--white));
+}
+
+.banner-btn-wrap {
+    display: flex;
+    justify-content: center;
+    li {
+        &:first-child {
+            margin-right: 8px;
+        }
+    }
+}

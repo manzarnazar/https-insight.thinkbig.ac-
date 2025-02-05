@@ -1,0 +1,171 @@
+/*============= Podcast Team  =============*/
+
+.podcast-team-area {
+    // margin-top: -328px;
+    // position: relative;
+    z-index: 1;
+}
+
+.podcast-team-single {
+    position: relative;
+    overflow: hidden;
+    display: flex !important;
+    justify-content: center;
+    @include msm-screen {
+        flex-direction: column;
+    }
+    &__thumb {
+        width: 300px;
+        height: 240px;
+        object-fit: cover;
+         img {
+            width: 300px;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 15px 0 0 15px;
+            @include msm-screen {
+                width: 525px;
+                border-radius: 15px 15px 0 0;
+            }
+        }
+        @include lg-screen {
+            width: 200px;
+        }
+        @include msm-screen {
+            width: 100%;
+            height: 200px;
+        }
+
+    }
+    &__content {
+        padding: 32px;
+        background-color: hsl(var(--bg-color));
+        border-radius: 0 15px 15px 0;
+        @include msm-screen {
+            border-radius: 0 0 15px 15px ;
+        }
+        &.name  {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            h4 {
+                font-weight: 700;
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+            img {
+                display: inline-block;
+                width: 20px;
+                height: auto;
+                object-fit: contain;
+                margin-bottom: 9px;
+            }
+        }
+    }
+    &__content-tags {
+        margin-bottom: 12px;
+        .btn.btn--ssm {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+.podcast-team-single {
+    transition: all .4s ease-in-out;
+    // &:hover {
+    //     .podcast-team-single__content .social-list {
+    //         transform: translateX(-50%);
+    //     }
+    // }
+    &__content  {
+        .social-list {
+            z-index: 3;
+            transition: all .4s ease-in-out;
+            .social-list__link {
+                background-color: hsl(var(--base));
+                color: hsl(var(--white)) !important;
+                border-color: hsl(var(--base)) !important;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.social-list__item:hover .social-list__link {
+    background: hsl(var(--base-two)) !important;
+    border: 1px solid hsl(var(--base-two)) !important;
+}
+
+
+
+
+
+
+
+
+// .podcast-team-area {
+//     margin-top: -328px;
+//     position: relative;
+//     z-index: 1;
+// }
+
+// .podcast-team-single {
+//     position: relative;
+//     overflow: hidden;
+//     border-radius: 15px;
+//     &__content {
+//         padding: 32px;
+//         position: absolute;
+//         bottom: 0;
+//         background:hsl(var(--base)/.04);
+//         width: 100%;
+//         left: 0;
+//         &.name  {
+//             display: flex;
+//             align-items: center;
+//             margin-bottom: 45px;
+//             h4 {
+//                 font-weight: 700;
+//                 font-size: 28px;
+//                 margin-bottom: 0;
+//             }
+//             img {
+//                 display: inline-block;
+//                 width: 30px;
+//                 height: auto;
+//                 object-fit: contain;
+//             }
+//         }
+//     }
+// }
+
+
+// .podcast-team-single {
+//     transition: all .4s ease-in-out;
+//     &:hover {
+//         .podcast-team-single__content .social-list {
+//             left: 50%;
+//             transform: translateX(-50%);
+//         }
+//     }
+//     &__content  {
+//         .social-list {
+//             position: absolute;
+//             z-index: 3;
+//             top: -65px;
+//             left: -100%;
+//             transition: all .4s ease-in-out;
+//             .social-list__link {
+//                 background-color: hsl(var(--base));
+//                 color: hsl(var(--white)) !important;
+//                 border-color: hsl(var(--base)) !important;
+//             }
+//         }
+//     }
+// }
+
+// .social-list__item:hover .social-list__link {
+//     background: hsl(var(--base-two)) !important;
+//     border: 1px solid hsl(var(--base-two)) !important;
+// }

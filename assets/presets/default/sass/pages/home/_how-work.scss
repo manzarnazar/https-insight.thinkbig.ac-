@@ -1,0 +1,37 @@
+/*====================== Ring Section====================*/
+.how-work-content {
+    padding-left: 20px;
+    @include md-screen {
+        padding-left: 0px;
+    }
+    &__hork-items  {
+        ul {
+            li {
+                display: flex;
+                @include msm-screen {
+                    flex-wrap: wrap;
+                }
+                h6 {
+                    margin-right: 30px;
+                    font-size: 16px;
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                    i {
+                        color: hsl(var(--base));
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.how-wor{
+    &__thumb {
+        height: 370px;
+        img {
+            @include fit-image;
+        }
+    }
+}
