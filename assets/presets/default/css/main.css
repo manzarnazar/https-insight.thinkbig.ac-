@@ -949,7 +949,7 @@ main {
     margin: 0;
     padding: 0;
     list-style: none;
-    letter-spacing: -0.09em !important;
+    letter-spacing: -0.07em !important;
     word-spacing: 3px !important;
     box-sizing: border-box;
 }
