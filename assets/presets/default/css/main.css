@@ -10,7 +10,7 @@
     --heading-font: "Fraunces 144pt SemiBold", serif;
     --body-font: "Fraunces", serif;
     --heading-one: clamp(1.5rem, 2.8vw + 1rem, 3.75rem);
-    --heading-two: 39px;
+    --heading-two: 50px;
     --heading-three: clamp(1.25rem, .8vw + 1rem, 1.875rem);
     --heading-four: clamp(1.125rem, .5vw + 1rem, 1.5rem);
     --heading-five: clamp(1.0625rem, .3vw + 1rem, 1.25rem);
@@ -6824,6 +6824,9 @@ img.epi-img {
 
 .blog-item__content {
     padding-top: 25px;
+}
+.blog-item__content a{
+    font-size: 24px !important;
 }
 
 
