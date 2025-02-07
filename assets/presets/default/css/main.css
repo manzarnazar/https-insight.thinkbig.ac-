@@ -2837,7 +2837,7 @@ select.form-control.form--control:has(option) ~ .form--label {
 .navbar .language-box .select {
     border: 1px solid transparent;
     padding: 3px 0;
-    font-size: 17px;
+    font-size: 22px;
     font-weight: 600;
     letter-spacing: 0.05px;
     color: hsl(var(--white));
@@ -2886,7 +2886,7 @@ select.form-control.form--control:has(option) ~ .form--label {
 
     .nav-menu .nav-item .nav-link {
         font-weight: 600;
-        font-size: 17px;
+        font-size: 22px;
         color: hsl(var(--white)) !important;
         position: relative;
         cursor: pointer;
