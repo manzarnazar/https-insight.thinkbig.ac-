@@ -949,6 +949,8 @@ main {
     margin: 0;
     padding: 0;
     list-style: none;
+    letter-spacing: -0.09em;
+    word-spacing: 3px;
     box-sizing: border-box;
 }
 
