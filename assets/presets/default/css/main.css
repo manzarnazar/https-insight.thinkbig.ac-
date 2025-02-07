@@ -5730,13 +5730,13 @@ img.epi-img {
 
 @media screen and (max-width: 1199px) {
     .banner__content h2 {
-        font-size: 39px;
+        font-size: 55px;
     }
 }
 
 @media screen and (max-width: 374px) {
     .banner__content h2 {
-        font-size: 39px;
+        font-size: 55px;
     }
 }
 
@@ -5744,6 +5744,7 @@ img.epi-img {
     margin-bottom: 20px;
     color: hsl(var(--white));
     padding-right: 50px;
+    font-size: 25px;
 }
 
 @media screen and (max-width: 575px) {
