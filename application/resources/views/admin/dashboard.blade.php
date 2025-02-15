@@ -279,7 +279,7 @@
                     columnWidth: '50%'
                 }
             },
-            colors: ['#BADA55', '#67BAA7'],
+            colors: ['#000', '#67BAA7'],
             series: [{
                 name: '@lang("Withdrawals")',
                 type: 'column',
@@ -360,7 +360,7 @@
     stroke: {
         curve: 'smooth'
     },
-    colors: ['#BADA55'],
+    colors: ['#000'],
         labels: @json($userLogins['labels']),
     xaxis: {
         type: 'date',
@@ -398,7 +398,7 @@
     stroke: {
         curve: 'smooth'
     },
-    colors: ['#BADA55'],
+    colors: ['#000'],
         labels: @json($subscription['labels']),
     xaxis: {
         type: 'date',
@@ -440,7 +440,7 @@
     stroke: {
         curve: 'smooth'
     },
-    colors: ['#BADA55'],
+    colors: ['#000'],
         labels: @json($episode['labels']),
     xaxis: {
         type: 'date',

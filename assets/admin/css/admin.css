@@ -1,5 +1,5 @@
 :root {
-    --primary: #BADA55;
+    --primary: #000;
 }
 
 /* default margin css start */
@@ -3950,7 +3950,7 @@ table thead th:last-child {
 table.table--light thead th {
     border: none;
     border-radius: 0px;
-    color: #BADA55;
+    color: #ffffff;
     background-color: #000;
     font-size: 15px;
 }
