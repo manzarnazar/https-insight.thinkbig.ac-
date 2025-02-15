@@ -1382,7 +1382,7 @@ html {
 }
 
 body {
-    font-family: "Maven Pro";
+    font-family: "Fraunces", serif;
     font-size: 1rem;
     padding: 0;
     margin: 0;
@@ -1629,8 +1629,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 500;
-    color: #34495e;
+    font-weight: 600;
+    color: #363f48;
     margin: 0;
     line-height: 1.4;
 }
@@ -3951,7 +3951,7 @@ table.table--light thead th {
     border: none;
     border-radius: 0px;
     color: #ffffff;
-    background-color: #00a7a7;
+    background-color: #000;
     font-size: 15px;
 }
 
@@ -5773,11 +5773,11 @@ th.w-85 {
 
 @-webkit-keyframes pulse-primary {
     0% {
-        -webkit-box-shadow: 0 0 0 0 rgba(115, 103, 240, 0.9);
+        -webkit-box-shadow: 0 0 0 0 #BADA55;
     }
 
     70% {
-        -webkit-box-shadow: 0 0 0 6px rgba(115, 103, 240, 0);
+        -webkit-box-shadow: 0 0 0 6px #BADA55;
     }
 
     100% {
@@ -8335,7 +8335,7 @@ tr:nth-child(odd) {
 }
 
 .nav-tabs .nav-link.active {
-    background-color: #00a7a7;
+    background-color: #000;
     border: none;
     font-weight: bold;
     color: #fff;
