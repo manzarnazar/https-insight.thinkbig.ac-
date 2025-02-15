@@ -1,5 +1,5 @@
 :root {
-    --primary: #000;
+    --primary: #00adad;
 }
 
 /* default margin css start */
@@ -1386,7 +1386,7 @@ body {
     font-size: 1rem;
     padding: 0;
     margin: 0;
-    font-weight: 500;
+    font-weight: 400;
     position: relative;
     background-color: #f3f3f9;
     word-break: break-word;
@@ -3951,7 +3951,7 @@ table.table--light thead th {
     border: none;
     border-radius: 0px;
     color: #ffffff;
-    background-color: #BADA55;
+    background-color: #000;
     font-size: 15px;
 }
 
@@ -5087,7 +5087,7 @@ th.w-85 {
 }
 
 .sidebar__menu .sidebar-menu-item>a:hover {
-    background-color: #BADA55;
+    background-color: #bada5540;
     padding-left: 25px;
 }
 
@@ -5102,7 +5102,7 @@ th.w-85 {
 
 .sidebar__menu .sidebar-menu-item .side-menu--open,
 .sidebar__menu .sidebar-menu-item.active>a {
-    background-color: #BADA55;
+    background-color: #bada5540;
     color: var(--primary);
 }
 
@@ -5224,7 +5224,7 @@ th.w-85 {
 }
 
 .sidebar[class*="bg--"] .sidebar__menu .sidebar-menu-item>a:hover {
-    background-color: #BADA55;
+    background-color: #bada5540;
 }
 
 .sidebar[class*="bg--"] .sidebar__menu .sidebar-menu-item .menu-icon,
@@ -8456,7 +8456,7 @@ input:checked+.slider:before {
 
     70% {
         transform: scale(1);
-        box-shadow: 0 0 0 10px #BADA55;
+        box-shadow: 0 0 0 10px rgba(0, 221, 221, 0);
     }
 
     100% {

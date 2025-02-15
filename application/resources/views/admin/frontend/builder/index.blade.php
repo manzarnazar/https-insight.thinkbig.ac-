@@ -183,12 +183,12 @@
     }
 
     .sec-item li i {
-        color: #000;
+        color: #00adad;
         padding-right: 15px;
     }
 
     .sec-item li i.fa-times {
-        color: #000;
+        color: #00adad;
         padding-right: 15px;
     }
 

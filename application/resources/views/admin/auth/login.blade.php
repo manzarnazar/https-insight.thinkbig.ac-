@@ -72,7 +72,7 @@
     });
 
     
-    const colors = ["#000", "#e3e3e3", "red", "green", "blue"];
+    const colors = ["#00adad", "#e3e3e3", "red", "green", "blue"];
 
     const numBalls = 50;
     const balls = [];
