@@ -69,7 +69,7 @@
 #remember {
     position: relative;
     top: 1px;
-    accent-color: #00adad;
+    accent-color: #000;
 }
 
 label {
@@ -97,7 +97,7 @@ label {
 }
 
 .login__footer a:hover {
-    color: #00adad;
+    color: #000;
     text-decoration: underline;
 }
 
@@ -111,7 +111,7 @@ label {
     border-radius: 5px;
     padding: 10px 15px;
     font-size: 17px;
-    background: #00adad;
+    background: #000;
     color: #fff;
 }
 
