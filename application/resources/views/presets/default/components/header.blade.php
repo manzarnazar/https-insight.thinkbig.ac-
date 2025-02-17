@@ -9,7 +9,7 @@
                 <div class="nav-head">
                     <div class="d-flex">
                         <div class="logo-wrapper">
-                            <a class="navbar-brand logo" href="{{route('home')}}"><img src="{{getImage('assets/images/general/logo.png')}}" alt=""></a>
+                            <a class="navbar-brand logo" href="{{route('home')}}"><img src="{{getImage('assets/images/general/logo_white.png')}}" alt=""></a>
 
                         </div>
                     </div>
