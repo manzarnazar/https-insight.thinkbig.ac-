@@ -7,7 +7,7 @@
 
 /*================ Css Variables Start ===============*/
 :root {
-    --heading-font: "Fraunces 144pt SemiBold", serif;
+    --heading-font: "Fraunces", serif;
     --body-font: "Fraunces", serif;
     --heading-one: clamp(1.5rem, 2.8vw + 1rem, 3.75rem);
     --heading-two: 50px;

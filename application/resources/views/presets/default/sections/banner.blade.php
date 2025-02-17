@@ -9,7 +9,7 @@
 <section class="banner-area bg-img">
 	<div class="container">
 		<div class="row gy-4 align-items-center justify-content-start">
-			<div class="col-lg-7">
+			<div class="col-lg-12">
 				<div class="banner__content text-left">
 					<h2> {{__(@$content->data_values->heading)}} </h2>
 					<p>{{__(@$content->data_values->subheading)}}</p>
