@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 
 @font-face {
     font-family: "Fraunces 144pt SemiBold";
@@ -7,7 +7,7 @@
 
 /*================ Css Variables Start ===============*/
 :root {
-    --heading-font: "Fraunces 144pt SemiBold", serif;
+    --heading-font: "Fraunces", serif;
     --body-font: "Fraunces", serif;
     --heading-one: clamp(1.5rem, 2.8vw + 1rem, 3.75rem);
     --heading-two: 50px;
@@ -5723,9 +5723,9 @@ img.epi-img {
 }
 
 .banner__content h2 {
-    font-size: 68px;
+    font-size: 144pt;
     margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: 600;
     color: hsl(var(--white));
     line-height: 1.1;
 }
