@@ -5723,7 +5723,7 @@ img.epi-img {
 }
 
 .banner__content h2 {
-    font-size: 144pt;
+    font-size: 12em;
     margin-bottom: 10px;
     font-weight: 600;
     color: hsl(var(--white));
